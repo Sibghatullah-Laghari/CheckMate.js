@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Board</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .navbar-list {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .navbar-brand {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 2rem;
+            color: #e8ad4eb3;
+            margin-right: auto;
+        }
+
+        .navbar-link {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-link:hover {
+            color: #f39c12;
+        }
+
+        .navbar-btn {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar-btn:hover {
+            background-color: #45a049;
+        }
+
+        .game-info {
+            text-align: center;
+            color: white;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .game-info span {
+            font-weight: bold;
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li><a href="index.html" class="navbar-brand">Chess Game</a></li>
+            <li><a href="about.html" class="navbar-link">About</a></li>
+            <li><a href="contact.html" class="navbar-link">Contact</a></li>
+            <li><a href="login.html" class="navbar-btn">Login</a></li>
+            <li><a href="signup.html" class="navbar-btn">Sign up</a></li>
+        </ul>
+    </nav>
+
+    <div class="game-info">
+        Current turn: <span id="turn-indicator">White</span>
+    </div>
+
+    <div class="chessboard">
+        <!-- Chessboard squares are generated dynamically by chess.js -->
+    </div>
+
+    <script src="chess.js"></script>
+</body>
+</html>
