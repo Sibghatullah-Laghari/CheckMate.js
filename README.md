@@ -1,6 +1,6 @@
 # Chess Game
 
-A browser-based chess application built with **HTML**, **CSS**, and **JavaScript** for the ICT project. Play a two-player local game, read about chess history and rules, and use demo login/signup pages.
+A browser-based chess application built with **HTML**, **CSS**, and **JavaScript**. Play a two-player local game, read about chess history and rules, and use demo login/signup pages.
 
 ## Features
 
