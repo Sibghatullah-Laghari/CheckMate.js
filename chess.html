@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Basic Page Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
     <title>Chess Board</title>
+
+    <!-- External CSS File -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Internal CSS -->
     <style>
+
+        /* General Page Styling */
         body {
             font-family: Arial, sans-serif;
         }
 
+        /* Navigation Bar */
         .navbar {
             background-color: #333;
             padding: 10px 20px;
         }
 
+        /* Navigation List */
         .navbar-list {
             list-style: none;
             display: flex;
@@ -24,6 +36,7 @@
             gap: 10px;
         }
 
+        /* Website Logo / Brand */
         .navbar-brand {
             text-decoration: none;
             font-weight: bold;
@@ -32,6 +45,7 @@
             margin-right: auto;
         }
 
+        /* Navigation Links */
         .navbar-link {
             text-decoration: none;
             color: white;
@@ -39,10 +53,12 @@
             transition: color 0.3s ease;
         }
 
+        /* Navigation Link Hover Effect */
         .navbar-link:hover {
             color: #f39c12;
         }
 
+        /* Login & Signup Buttons */
         .navbar-btn {
             background-color: #4CAF50;
             border: none;
@@ -57,10 +73,12 @@
             transition: background-color 0.3s ease;
         }
 
+        /* Button Hover Effect */
         .navbar-btn:hover {
             background-color: #45a049;
         }
 
+        /* Game Information Section */
         .game-info {
             text-align: center;
             color: white;
@@ -68,13 +86,17 @@
             font-size: 18px;
         }
 
+        /* Turn Indicator */
         .game-info span {
             font-weight: bold;
             color: #f39c12;
         }
+
     </style>
 </head>
 <body>
+
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <ul class="navbar-list">
             <li><a href="index.html" class="navbar-brand">Chess Game</a></li>
@@ -85,14 +107,20 @@
         </ul>
     </nav>
 
+    <!-- Display Current Player's Turn -->
     <div class="game-info">
         Current turn: <span id="turn-indicator">White</span>
     </div>
 
+    <!-- Chessboard Container -->
     <div class="chessboard">
+
         <!-- Chessboard squares are generated dynamically by chess.js -->
+
     </div>
 
+    <!-- External JavaScript File -->
     <script src="chess.js"></script>
+
 </body>
 </html>
