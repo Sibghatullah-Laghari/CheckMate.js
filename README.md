@@ -1,127 +1,129 @@
 # Chess Game
 
-A browser-based chess application built with **HTML**, **CSS**, and **JavaScript**. Play a two-player local game, read about chess history and rules, and use demo login/signup pages.
+A web-based chess application developed using **HTML**, **CSS**, and **JavaScript**. The project allows two players to play locally, explore the basics of chess, and access simple demonstration login and signup pages.
 
 ## Features
 
-- **Interactive chessboard** — 8×8 grid with Unicode chess pieces
-- **Two-player local play** — White and Black alternate turns on the same device
-- **Move validation** — Legal moves enforced for all standard pieces (pawn, rook, knight, bishop, queen, king)
-- **Piece capture** — Capture opponent pieces with valid moves
-- **User accounts (demo)** — Sign up and log in using browser localStorage (no backend server)
-- **Contact form** — Submit messages stored locally in the browser
-- **About page** — Chess history, rules, and piece movement guide
+- **Interactive chessboard** — Standard 8×8 board rendered with Unicode chess symbols
+- **Local multiplayer** — Two players take turns playing on the same computer
+- **Move validation** — Standard movement rules are applied for pawns, rooks, knights, bishops, queens, and kings
+- **Piece capturing** — Opponent pieces can be captured through valid moves
+- **Demo authentication** — Register and log in using browser `localStorage` without a backend
+- **Contact page** — Messages are saved locally inside the browser
+- **Information page** — Learn about chess history, rules, and piece movements
 
 ## Project Structure
 
-```
+```text
 ICT project/
-├── index.html      # Landing / home page
-├── chess.html      # Main chess game board
-├── chess.js        # Game logic and move validation
-├── styles.css      # Chessboard and piece styling
-├── about.html      # About chess — history and rules
-├── contact.html    # Contact form page
-├── login.html      # User login page
-├── signup.html     # User registration page
-├── auth.js         # Client-side authentication helpers
-├── package.json    # Project metadata and start scripts
-└── README.md       # This documentation
+├── index.html      # Main landing page
+├── chess.html      # Chess game interface
+├── chess.js        # Core game mechanics and move validation
+├── styles.css      # Styling for the board and interface
+├── about.html      # Chess information and rules
+├── contact.html    # Contact page
+├── login.html      # Login screen
+├── signup.html     # Registration screen
+├── auth.js         # Client-side authentication logic
+├── package.json    # Project configuration
+└── README.md       # Project documentation
 ```
 
 ## Requirements
 
-- A modern web browser (Chrome, Firefox, Edge, Safari)
-- **Node.js** (optional) — only needed to run the included dev server
+To run this project you will need:
 
-No database or backend is required. Authentication and contact messages are stored in the browser's `localStorage`.
+- A modern web browser such as Chrome, Firefox, Edge, or Safari
+- **Node.js** (optional) if you want to use the included development server
 
-## How to Run
+The application does not rely on a database or backend service. User accounts and contact submissions are stored using the browser's `localStorage`.
 
-### Option 1: Using the start script (recommended)
+## Running the Project
+
+### Option 1: Start script (recommended)
 
 ```bash
 cd "ICT project"
 ./start.sh
 ```
 
-Then open [http://localhost:3000](http://localhost:3000) in your browser.
+Then visit **http://localhost:3000** in your browser.
 
-### Option 2: Using Python
+### Option 2: Python HTTP Server
 
 ```bash
 cd "ICT project"
 python3 -m http.server 3000
 ```
 
-Then open [http://localhost:3000](http://localhost:3000) in your browser.
+After the server starts, open **http://localhost:3000**.
 
-### Option 3: Using npm (requires Node.js and npm)
+### Option 3: npm
 
 ```bash
 cd "ICT project"
 npm start
 ```
 
-Then open [http://localhost:3000](http://localhost:3000) in your browser.
+Open **http://localhost:3000** once the server is running.
 
-### Option 4: Open directly in browser
+### Option 4: Open the HTML file directly
 
-Double-click `index.html` to open the home page. For full functionality (auth, contact form), use a local server (Options 1 or 2) to avoid browser security restrictions.
+Launch `index.html` in your browser by double-clicking it. For the best experience, especially with login and contact features, running a local server is recommended.
 
-## How to Play
+## Playing the Game
 
-1. Go to **Play** (`chess.html`) or click **Start Playing** on the home page.
-2. **White moves first.** The current turn is shown above the board.
-3. **Click a piece** to select it (the square highlights in yellow).
-4. **Click a destination square** to move. Invalid moves show an alert.
-5. **Click an opponent's piece** while one of yours is selected to capture it (if the move is legal).
-6. Turns switch automatically after each valid move.
+1. Open **Play** (`chess.html`) or select **Start Playing** from the home page.
+2. White always makes the opening move.
+3. Select a piece by clicking on it. The chosen square will be highlighted.
+4. Click another square to attempt the move. Illegal moves are rejected.
+5. Capture an opponent's piece by selecting it as the destination when the move is valid.
+6. After a successful move, the turn automatically switches to the other player.
 
-## Pages
+## Project Pages
 
-| Page | URL | Description |
-|------|-----|-------------|
-| Home | `index.html` | Welcome page with project overview |
-| Play | `chess.html` | Interactive chess game |
-| About | `about.html` | Chess rules and history |
+| Page | File | Purpose |
+|------|------|---------|
+| Home | `index.html` | Introduction and project overview |
+| Play | `chess.html` | Main gameplay screen |
+| About | `about.html` | Chess history and rules |
 | Contact | `contact.html` | Contact form |
-| Login | `login.html` | Log in to a demo account |
-| Sign up | `signup.html` | Create a demo account |
+| Login | `login.html` | Demo user login |
+| Sign Up | `signup.html` | Demo account registration |
 
-## Authentication (Demo)
+## Demo Authentication
 
-Login and signup use **localStorage** only — there is no real server or database.
+Authentication is handled entirely through the browser using **localStorage**. No external server or database is involved.
 
-- **Sign up:** Create an account with first name, last name, email, and password.
-- **Login:** Use the email and password you registered with.
-- After login, you are redirected to the chess game page.
-- Data is stored only in your browser and is cleared if you clear site data.
+- Register using your first name, last name, email address, and password.
+- Sign in with the same email and password you registered.
+- Successful login redirects you to the chess game.
+- All stored data remains in your browser until the site's storage is cleared.
 
-> **Note:** Passwords are stored in plain text in localStorage. This is for demonstration only and is not suitable for production use.
+> **Note:** Passwords are saved as plain text in `localStorage`. This implementation is intended only for learning and demonstration purposes and should not be used in production applications.
 
-## Technologies Used
+## Technologies
 
 - HTML5
-- CSS3 (Grid layout, flexbox)
-- Vanilla JavaScript (DOM manipulation, event handling, game logic)
-- Unicode chess symbols for pieces
+- CSS3 (Grid and Flexbox)
+- Vanilla JavaScript (DOM operations, events, and game logic)
+- Unicode chess characters
 
-## Known Limitations
+## Current Limitations
 
-- No check/checkmate detection
-- No castling, en passant, or pawn promotion
-- No online multiplayer — two players share one keyboard/mouse
-- No persistent game state across page reloads
+- Check and checkmate are not implemented
+- Castling, en passant, and pawn promotion are unavailable
+- Online multiplayer is not supported
+- Game progress is lost after refreshing the page
 
-## Future Improvements
+## Possible Enhancements
 
-- Add checkmate and stalemate detection
-- Support castling, en passant, and pawn promotion
-- Save and resume games
-- Add a move history panel
-- Connect to a real backend API for authentication
+- Implement check and checkmate detection
+- Add castling, en passant, and pawn promotion
+- Support saving and restoring games
+- Display a complete move history
+- Integrate a backend service for authentication
 
 ## License
 
-MIT
+Released under the **MIT License**.
