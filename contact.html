@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Ensures proper scaling across different screen sizes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Chess Game</title>
     <style>
@@ -11,6 +12,7 @@
             margin: 0;
         }
 
+        /* Top navigation bar */
         .navbar {
             background-color: #333;
             padding: 10px 20px;
@@ -37,6 +39,7 @@
             color: #e8ad4e !important;
         }
 
+        /* Main contact form container */
         .contact-container {
             max-width: 600px;
             margin: 40px auto;
@@ -52,12 +55,14 @@
             margin-bottom: 20px;
         }
 
+        /* Form labels */
         label {
             display: block;
             margin-bottom: 5px;
             font-weight: bold;
         }
 
+        /* Shared styling for form fields */
         input[type="text"],
         input[type="email"],
         textarea {
@@ -75,6 +80,7 @@
             min-height: 120px;
         }
 
+        /* Primary action button */
         button {
             width: 100%;
             padding: 12px;
@@ -90,6 +96,7 @@
             background-color: #0056b3;
         }
 
+        /* Success notification displayed after form submission */
         .success-message {
             display: none;
             background-color: #d4edda;
@@ -100,6 +107,7 @@
             text-align: center;
         }
 
+        /* Footer section */
         .footer {
             background-color: #333;
             color: white;
@@ -110,6 +118,7 @@
     </style>
 </head>
 <body>
+    <!-- Website navigation -->
     <nav class="navbar">
         <a href="index.html" class="navbar-brand">Chess Game</a>
         <div>
@@ -121,11 +130,14 @@
         </div>
     </nav>
 
+    <!-- Contact form section -->
     <div class="contact-container">
         <h2>Contact Us</h2>
+
         <div id="success-message" class="success-message">
             Thank you! Your message has been received.
         </div>
+
         <form id="contact-form">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your name" required>
@@ -140,21 +152,31 @@
         </form>
     </div>
 
+    <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2024 Chess Game. All rights reserved.</p>
     </footer>
 
     <script>
+        // Save contact messages locally using browser storage
         document.getElementById('contact-form').addEventListener('submit', function (e) {
             e.preventDefault();
+
+            // Retrieve previously saved messages (if available)
             const messages = JSON.parse(localStorage.getItem('contactMessages') || '[]');
+
+            // Store the latest contact form submission
             messages.push({
                 name: document.getElementById('name').value,
                 email: document.getElementById('email').value,
                 message: document.getElementById('message').value,
                 date: new Date().toISOString()
             });
+
+            // Update local storage with the new message
             localStorage.setItem('contactMessages', JSON.stringify(messages));
+
+            // Display confirmation and reset the form
             document.getElementById('success-message').style.display = 'block';
             this.reset();
         });
