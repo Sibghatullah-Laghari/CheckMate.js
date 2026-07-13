@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Responsive layout for desktop and mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chess Game - Home</title>
     <link rel="stylesheet" href="styles.css">
@@ -12,6 +13,7 @@
             margin: 0;
         }
 
+        /* Top navigation bar */
         .navbar {
             background-color: #333;
             padding: 10px 20px;
@@ -38,6 +40,7 @@
             color: #e8ad4e !important;
         }
 
+        /* Hero section */
         .hero {
             text-align: center;
             padding: 60px 20px;
@@ -57,6 +60,7 @@
             line-height: 1.6;
         }
 
+        /* Primary action button */
         .btn-primary {
             display: inline-block;
             background-color: #4CAF50;
@@ -73,6 +77,7 @@
             color: white;
         }
 
+        /* Feature cards section */
         .features {
             max-width: 900px;
             margin: 40px auto;
@@ -95,6 +100,7 @@
             margin-bottom: 10px;
         }
 
+        /* Footer section */
         .footer {
             background-color: #333;
             color: white;
@@ -105,6 +111,7 @@
     </style>
 </head>
 <body>
+    <!-- Main navigation -->
     <nav class="navbar">
         <a href="index.html" class="navbar-brand">Chess Game</a>
         <div>
@@ -116,27 +123,32 @@
         </div>
     </nav>
 
+    <!-- Welcome section -->
     <section class="hero">
         <h1>Welcome to Chess Game</h1>
         <p>A browser-based chess application built with HTML, CSS, and JavaScript. Play locally with a friend, learn the rules, and enjoy the classic strategy game.</p>
         <a href="chess.html" class="btn-primary">Start Playing</a>
     </section>
 
+    <!-- Project highlights -->
     <section class="features">
         <div class="feature-card">
             <h3>Two-Player Mode</h3>
-            <p>Take turns on the same device. White moves first, then Black alternates each turn.</p>
+            <p>Take turns on the same device. White makes the opening move, followed by alternating turns.</p>
         </div>
+
         <div class="feature-card">
             <h3>Move Validation</h3>
-            <p>All standard piece movements are validated — pawns, knights, bishops, rooks, queens, and kings.</p>
+            <p>Standard movement rules are applied for pawns, knights, bishops, rooks, queens, and kings.</p>
         </div>
+
         <div class="feature-card">
             <h3>Learn Chess</h3>
-            <p>Visit the About page to read the history, rules, and how each piece moves.</p>
+            <p>Visit the About page to explore chess history, rules, and the movement of each piece.</p>
         </div>
     </section>
 
+    <!-- Website footer -->
     <footer class="footer">
         <p>&copy; 2024 Chess Game. All rights reserved.</p>
     </footer>
