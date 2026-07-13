@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Configure responsive scaling for different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up - Chess Game</title>
     <style>
@@ -16,6 +17,7 @@
             margin: 0;
         }
 
+        /* Simple navigation links */
         .nav-links {
             margin-bottom: 20px;
         }
@@ -30,6 +32,7 @@
             text-decoration: underline;
         }
 
+        /* Sign up form container */
         .signup-container {
             background-color: white;
             padding: 30px;
@@ -44,6 +47,7 @@
             color: #333;
         }
 
+        /* Shared styling for input fields */
         input[type="text"],
         input[type="email"],
         input[type="password"] {
@@ -56,6 +60,7 @@
             box-sizing: border-box;
         }
 
+        /* Primary submit button */
         button {
             width: 100%;
             padding: 10px;
@@ -72,6 +77,7 @@
             background-color: #0056b3;
         }
 
+        /* Message area for success or error notifications */
         .message {
             display: none;
             padding: 10px;
@@ -92,29 +98,40 @@
     </style>
 </head>
 <body>
+    <!-- Basic page navigation -->
     <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="chess.html">Play</a>
         <a href="login.html">Login</a>
     </div>
 
+    <!-- User registration form -->
     <div class="signup-container">
         <h2>Sign Up</h2>
+
         <div id="message" class="message"></div>
+
         <form id="signup-form">
             <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
             <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
             <input type="email" id="email" name="email" placeholder="Email" required>
             <input type="password" id="password" name="password" placeholder="Password" required minlength="6">
+
             <button type="submit">Sign up</button>
         </form>
-        <p class="login-link">Already have an account? <a href="login.html">Login</a></p>
+
+        <p class="login-link">
+            Already have an account? <a href="login.html">Login</a>
+        </p>
     </div>
 
     <script src="auth.js"></script>
     <script>
+        // Handle user registration
         document.getElementById('signup-form').addEventListener('submit', function (e) {
             e.preventDefault();
+
+            // Register the user using the authentication helper
             const result = registerUser({
                 firstName: document.getElementById('firstName').value.trim(),
                 lastName: document.getElementById('lastName').value.trim(),
@@ -122,9 +139,14 @@
                 password: document.getElementById('password').value
             });
 
+            // Display the appropriate message based on the registration result
             if (result.success) {
                 showMessage('message', result.message + ' Redirecting to login...', false);
-                setTimeout(() => { window.location.href = 'login.html'; }, 1500);
+
+                // Redirect after a short delay
+                setTimeout(() => {
+                    window.location.href = 'login.html';
+                }, 1500);
             } else {
                 showMessage('message', result.message, true);
             }
