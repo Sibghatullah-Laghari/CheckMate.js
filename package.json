@@ -1,12 +1,18 @@
 {
   "name": "chess-game",
   "version": "1.0.0",
-  "description": "A browser-based chess game built with HTML, CSS, and JavaScript",
+  "description": "A browser-based chess game developed using HTML, CSS, and JavaScript.",
   "scripts": {
     "start": "npx --yes serve . -l 3000",
     "dev": "npx --yes serve . -l 3000"
   },
-  "keywords": ["chess", "html", "javascript", "game"],
+  "keywords": [
+    "chess",
+    "html",
+    "css",
+    "javascript",
+    "browser-game"
+  ],
   "author": "",
   "license": "MIT"
 }
