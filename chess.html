@@ -5,9 +5,10 @@
     <!-- Basic Page Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Last updated: 2026-07-16 – minor improvements and notes added -->
 
     <!-- Page Title -->
-    <title>Chess Board</title>
+    <title>Play Chess – Two-Player Board</title>
 
     <!-- External CSS File -->
     <link rel="stylesheet" href="styles.css">
@@ -86,7 +87,7 @@
             font-size: 18px;
         }
 
-        /* Turn Indicator */
+        /* Turn Indicator – highlights whose turn it is */
         .game-info span {
             font-weight: bold;
             color: #f39c12;
@@ -107,20 +108,21 @@
         </ul>
     </nav>
 
-    <!-- Display Current Player's Turn -->
+    <!-- Display Current Player's Turn – updated dynamically by chess.js -->
     <div class="game-info">
         Current turn: <span id="turn-indicator">White</span>
     </div>
 
-    <!-- Chessboard Container -->
+    <!-- Chessboard Container – squares are rendered by chess.js -->
     <div class="chessboard">
-
         <!-- Chessboard squares are generated dynamically by chess.js -->
-
     </div>
 
-    <!-- External JavaScript File -->
+    <!-- External JavaScript File – contains all game logic and rendering -->
     <script src="chess.js"></script>
+
+    <!-- Small developer note (visible only in source) -->
+    <!-- For debugging, open the browser console (F12) to see move logs. -->
 
 </body>
 </html>
