@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <!-- Ensures proper scaling across different screen sizes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Added a description for better SEO / context -->
+    <meta name="description" content="Contact the Chess Game team – your messages are stored locally in your browser.">
     <title>Contact - Chess Game</title>
     <style>
         body {
@@ -150,15 +152,24 @@
 
             <button type="submit">Send Message</button>
         </form>
+        <!-- Short note about data storage -->
+        <p style="text-align: center; font-size: 0.9em; color: #666; margin-top: 15px;">
+            💾 Your message is saved locally in your browser (localStorage).
+        </p>
     </div>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2024 Chess Game. All rights reserved.</p>
+        <!-- Updated year to 2026 -->
+        <p>&copy; 2026 Chess Game. All rights reserved.</p>
     </footer>
 
     <script>
-        // Save contact messages locally using browser storage
+        /**
+         * Contact form handler – stores messages in browser's localStorage.
+         * This is a demo implementation; no data is sent to any server.
+         * Updated: 2026-07-16
+         */
         document.getElementById('contact-form').addEventListener('submit', function (e) {
             e.preventDefault();
 
@@ -179,6 +190,11 @@
             // Display confirmation and reset the form
             document.getElementById('success-message').style.display = 'block';
             this.reset();
+
+            // Optional: auto-hide the success message after 5 seconds
+            setTimeout(() => {
+                document.getElementById('success-message').style.display = 'none';
+            }, 5000);
         });
     </script>
 </body>
