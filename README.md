@@ -21,7 +21,7 @@ A web-based chess application developed using **HTML**, **CSS**, and **JavaScrip
 
 ---
 
-## 📁 Project Structure
+## 📁 Project Structure:-
 
 ```text
 ICT project/
