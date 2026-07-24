@@ -15,7 +15,7 @@ A web-based chess application developed using **HTML**, **CSS**, and **JavaScrip
 * **Piece capturing** — Opponent pieces can be captured by performing valid moves
 * **Demo authentication** — Register and log in using browser `localStorage` without requiring a backend
 * **Contact page** — User messages are saved locally within the browser
-* **Information page** — Learn about basic chess history, rules, and chess piece movements
+* **Information page** — Learn about basic chess history, rules, and chess piece movements.
 
 > 💡 *Tip:* The board automatically highlights the selected piece – click a valid destination square to move.
 
