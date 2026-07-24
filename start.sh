@@ -1,10 +1,10 @@
 #!/bin/bash
 # ============================================
-# Chess Game – Development Server Starter.
+# Chess Game – Development Server Starter...
 # ============================================
-# Purpose:  Launches a simple HTTP server.
-#           to serve the Chess Game frontend.
-# Updated:  2026-07-16.
+# Purpose:  Launches a simple HTTP server...
+#           to serve the Chess Game frontend...
+# Updated:  2026-07-16...
 # ============================================
 
 # Navigate to the script's directory (project root)
