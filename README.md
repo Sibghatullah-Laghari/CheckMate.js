@@ -17,7 +17,7 @@ A web-based chess application developed using **HTML**, **CSS**, and **JavaScrip
 * **Contact page** — User messages are saved locally within the browser
 * **Information page** — Learn about basic chess history, rules, and chess piece movements.
 
-> 💡 *Tip:* The board automatically highlights the selected piece – click a valid destination square to move...
+> 💡 *Tip:* The board automatically highlights the selected piece – click a valid destination square to move.
 
 ---
 
