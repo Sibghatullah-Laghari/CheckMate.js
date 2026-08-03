@@ -36,3 +36,4 @@ ICT project/
 ├── auth.js         # Client-side authentication logic
 ├── package.json    # Project configuration (npm start)
 └── README.md       # Project documentation (this file)
+.
