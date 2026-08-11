@@ -45,4 +45,4 @@ $PYTHON_CMD -m http.server "$PORT"
 # ---- Note: This line runs after the server stops ----
 echo ""
 echo "✅ Server stopped."
-..
+....
