@@ -10,7 +10,7 @@
 # Navigate to the script's directory (project root)
 cd "$(dirname "$0")"
 
-# ---- Configuration ----
+# ---- Configurations ----
 PORT=3000
 HOST="localhost"
 
