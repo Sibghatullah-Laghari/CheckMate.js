@@ -18,21 +18,4 @@ A web-based chess application developed using **HTML**, **CSS**, and **JavaScrip
 
 > 💡 *Tip:* The board automatically highlights the selected piece – click a valid destination square to move.
 
----
-
-## 📁 Project Structure:-
-
-```text
-ICT project/
-├── index.html      # Main landing page
-├── chess.html      # Primary chess game interface
-├── chess.js        # Chess logic and move validation
-├── styles.css      # Interface styling and board layout
-├── about.html      # Chess information and basic rules
-├── contact.html    # Contact form page
-├── login.html      # Demo user login page
-├── signup.html     # Demo user registration page
-├── auth.js         # Client-side authentication logic
-├── package.json    # Project configuration (npm start)
-└── README.md       # Project documentation (this file)
 
