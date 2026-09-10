@@ -16,6 +16,4 @@ A web-based chess application developed using **HTML**, **CSS**, and **JavaScrip
 * **Demo authentication** — Register and log in using browser `localStorage` without requiring a backend
 
 
-> 💡 *Tip:* The board automatically highlights the selected piece – click a valid destination square to move.
-
 
