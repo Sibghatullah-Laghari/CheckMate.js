@@ -15,7 +15,3 @@ A web-based chess application developed using **HTML**, **CSS**, and **JavaScrip
 * **Piece capturing** — Opponent pieces can be captured by performing valid moves
 * **Demo authentication** — Register and log in using browser `localStorage` without requiring a backend
 
-
-....
-///
-,,,,
