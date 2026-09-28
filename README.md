@@ -1,9 +1,9 @@
 # ♟️ Chess Game
 
-> **📅 README Status:** Updated on **2026-07-16** – reflects the current state of the project.  
-> **🎯 Goal:** A web-based chess application for two players on the same device, with demo authentication.
+> **📅 README Status:** Updated on **2026-07-16** – reflects the current state of the project.  .
+> **🎯 Goal:** A web-based chess application for two players on the same device, with demo authentication..
 
-A web-based chess application developed using **HTML**, **CSS**, and **JavaScript**. The project allows two players to play a local chess match, understand the fundamentals of chess, and use simple demonstration login and signup pages.
+A web-based chess application developed using **HTML**, **CSS**, and **JavaScript**. The project allows two players to play a local chess match, understand the fundamentals of chess, and use simple demonstration login and signup pages..
 
 ---
 
