@@ -13,5 +13,5 @@ A web-based chess application developed using **HTML**, **CSS**, and **JavaScrip
 * **Local multiplayer** — Two players can play on the same device by taking alternating turns
 * **Move validation** — Standard movement rules are supported for pawns, rooks, knights, bishops, queens, and kings
 * **Piece capturing** — Opponent pieces can be captured by performing valid moves
-* **Demo authentication** — Register and log in using browser `localStorage` without requiring a backend....
+* **Demo authentication** — Register and log in using browser `localStorage` without requiring a backend
 
