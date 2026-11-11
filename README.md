@@ -14,3 +14,4 @@ A web-based chess application developed using **HTML**, **CSS**, and **JavaScrip
 * **Move validation** — Standard movement rules are supported for pawns, rooks, knights, bishops, queens, and kings
 * **Piece capturing** — Opponent pieces can be captured by performing valid moves
 * **Demo authentication** — Register and log in using browser `localStorage` without requiring a backend
+.
